@@ -1,0 +1,125 @@
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-recycle"></i> EcoSort</h1>
+            <p>Your smart guide to proper waste disposal</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-bin"></i> Sorting Guide</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Locator</a></li>
+                <li><a href="#"><i class="fas fa-question-circle"></i> Quiz</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+            </ul>
+        </div>
+    </nav>
+ 
+    <main class="container">
+        <section id="search">
+            <h2>How should I dispose of this?</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for an item (e.g. pizza box, batteries)">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <!-- <div id="search-results">
+                 Search results would appear here with JavaScript
+                <div class="item-card">
+                    <h3>Plastic Bottle</h3>
+                    <span class="category-badge recycling-badge">Recycling</span>
+                </div>
+                <div class="item-card">
+                    <h3>Pizza Box</h3>
+                    <span class="category-badge compost-badge">Compost</span>
+                </div> -->
+            <!-- </div> -->
+        </section>
+
+        <section id="categories">
+            <h2>Waste Categories</h2>
+            <div class="category-grid">
+                <div class="category-card recycling">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Recycling</h3>
+                    <p>Paper, cardboard, clean containers</p>
+                </div>
+                <div class="category-card compost">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Compost</h3>
+                    <p>Food scraps, yard waste</p>
+                </div>
+                <div class="category-card landfill">
+                    <i class="fas fa-trash"></i>
+                    <h3>Landfill</h3>
+                    <p>Non-recyclable, non-compostable items</p>
+                </div>
+                <div class="category-card hazardous">
+                    <i class="fas fa-biohazard"></i>
+                    <h3>Hazardous</h3>
+                    <p>Batteries, chemicals, electronics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="common-items">
+            <h2>Common Items</h2>
+            <div class="items-grid">
+                <div class="item-card">
+                    <h3>Plastic Bottle</h3>
+                    <span class="category-badge recycling-badge">Recycling</span>
+                </div>
+                <div class="item-card">
+                    <h3>Batteries</h3>
+                    <span class="category-badge hazardous-badge">Hazardous</span>
+                </div>
+                <div class="item-card">
+                    <h3>Glass Jar</h3>
+                    <span class="category-badge recycling-badge">Recycling</span>
+                </div>
+                <div class="item-card">
+                    <h3>Coffee Grounds</h3>
+                    <span class="category-badge compost-badge">Compost</span>
+                </div>
+                <div class="item-card">
+                    <h3>Plastic Bags</h3>
+                    <span class="category-badge landfill-badge">Landfill</span>
+                </div>
+                <div class="item-card">
+                    <h3>Electronics</h3>
+                    <span class="category-badge hazardous-badge">Hazardous</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz-section">
+            <h2>Test Your Knowledge</h2>
+            <div class="quiz-container">
+                <div id="quiz-question">
+                    Where should you dispose of a clean aluminum can?
+                </div>
+                <div id="quiz-options">
+                    <div class="quiz-option">Recycling</div>
+                    <div class="quiz-option">Compost</div>
+                    <div class="quiz-option">Landfill</div>
+                    <div class="quiz-option">Hazardous</div>
+                </div>
+                <button id="quiz-next" disabled>Next Question</button>
+                <div id="quiz-score">Score: 0/0</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 EcoSort Waste Sorting Guide</p>
+            <p>Helping to protect our planet through proper waste disposal</p>
+        </div>
+    </footer>
+</body>
+</html>
